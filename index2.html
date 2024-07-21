@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Order</h1>
+        <div class="contact">
+            <p>Contact No: 8690305357</p>
+        </div>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-item" data-name="Chicken Tandoori" data-price="200">
+                <h3>Chicken Tandoori</h3>
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Chicken Tandoori', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Murga Fry" data-price="250">
+                <h3>Murga Fry</h3>
+                <p>Price: ₹250</p>
+                <button onclick="addToCart('Murga Fry', 250)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Omelet" data-price="50">
+                <h3>Omelet</h3>
+                <p>Price: ₹50</p>
+                <button onclick="addToCart('Omelet', 50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Egg Curry" data-price="150">
+                <h3>Egg Curry</h3>
+                <p>Price: ₹150</p>
+                <button onclick="addToCart('Egg Curry', 150)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Chapati" data-price="20">
+                <h3>Chapati</h3>
+                <p>Price: ₹20</p>
+                <button onclick="addToCart('Chapati', 20)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Murga Curry" data-price="200">
+                <h3>Murga Curry</h3>
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Murga Curry', 200)">Add to Cart</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <div class="total">
+                <p>Total: ₹<span id="total-price">0</span></p>
+            </div>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
